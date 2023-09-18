@@ -49,7 +49,7 @@ Ping: D8:0F:99:57:39:80 from 24:CD:8D:82:CC:71 (data size 44) ...
 44 bytes from D8:0F:99:57:39:80 id 0 time 45.68ms
 44 bytes from D8:0F:99:57:39:80 id 1 time 71.06ms
 44 bytes from D8:0F:99:57:39:80 id 2 time 44.02ms
-```
+
 
 ## Bluetooth-headset
 ```
