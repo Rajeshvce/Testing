@@ -57,6 +57,7 @@ Ping: D8:0F:99:57:39:80 from 24:CD:8D:82:CC:71 (data size 44) ...
 
 # Sample test
 ```
+```
 * Setting GPIO pins
 ```
 root@spencer-gen2:~# amixer sset Lineout unmute
