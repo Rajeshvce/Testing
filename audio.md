@@ -10,9 +10,10 @@
 * Append the following line to the /etc/resolve.conf => nameserver 8.8.8.8
 * Unmute the speaker and enable the capture from the microphone (see qvts/audio.md)
 
-# Start the simple browser application
+## Start the simple browser application
 ```
 root@spencer-gen2:~#
+root@spencer-gen2:~# echo nameserver 8.8.8.8 >> /etc/resolv.conf
 root@spencer-gen2:~# export QTWEBENGINE_DISABLE_SANDBOX=1
 root@spencer-gen2:~# export QT_QPA_EGLFS_FORCE888=24
 root@spencer-gen2:~# /usr/share/examples/webenginewidgets/simplebrowser/simplebrowser https://webrtc.github.io/samples/                                                    
@@ -45,175 +46,58 @@ Init Parameters:
 js: Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort'.
  
 ```
-# To Test camera
+# Testing instructions
+## Query the Video and Audio devices
+
+```
+//On the display a screen like below will be displayed 
+//Click on the highlighted link in the image to query the media devices in browser
+
+```
+<img width="576" alt="query" src="https://github.com/Rajeshvce/Testing/assets/94607772/7de74c08-16ab-4632-bd01-19806ab94df7">
+
+```
+//Then you will get a screen like below 
+//In this screen, one can be able to select the different video devices and audio devices 
+//One can see the preview of the cameras selected on the video source section 
+
+```
+<img width="623" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/07ddcadf-b60a-4609-b6df-3e9fedb4daab">
+
+## Camera Testing
+
+```
+//On the display a screen like below will be displayed 
+//Click on the highlighted link in the image to test the camera in browser
+
+```
 <img width="709" alt="camera" src="https://github.com/Rajeshvce/Testing/assets/94607772/2b7079b5-660f-4e25-9923-e58684cd8a96">
 
 ```
-//On the display a screen like above will be displayed 
-//Click on the highlighted link in the image to check the camera
-/Then you will get a screen like this  
-```
-<img width="737" alt="camera" src="https://github.com/Rajeshvce/Testing/assets/94607772/a58573d9-b3f4-4176-b084-e8c860914279">
-
-```
-//In this screen click the button open camera and give the access to camera 
-//Then you will be able to see the preview of camera
+//Then you will get a screen like below 
+//In this screen click the button ** open camera** and give the access to camera 
+//Then you will be able to see the preview of camera on the display
 
 ```
 
-* capture from Microphone:
-```
-root@spencer-gen2:~# amixer set 'PCM' 110
-Simple mixer control 'PCM',0
-  Capabilities: pvolume
-  Playback channels: Front Left - Front Right
-  Limits: Playback 0 - 192
-  Mono:
-  Front Left: Playback 110 [57%]
-  Front Right: Playback 110 [57%]
-root@spencer-gen2:~# 
-root@spencer-gen2:~# 
-root@spencer-gen2:~# 
-root@spencer-gen2:~# amixer sset Mic 1
-Simple mixer control 'Mic',0
-  Capabilities: volume volume-joined
-  Playback channels: Mono
-  Capture channels: Mono
-  Limits: 0 - 3
-  Mono: 1 [33%] [20.00dB]
-root@spencer-gen2:~# amixer set 'Capture Mux' 'MIC_IN'
-Simple mixer control 'Capture Mux',0
-  Capabilities: enum
-  Items: 'MIC_IN' 'LINE_IN'
-  Item0: 'MIC_IN'
-root@spencer-gen2:~# 
-root@spencer-gen2:~# amixer set 'Capture' 12
-Simple mixer control 'Capture',0
-  Capabilities: cvolume cswitch cswitch-joined
-  Capture channels: Front Left - Front Right
-  Limits: Capture 0 - 15
-  Front Left: Capture 12 [80%] [on]
-  Front Right: Capture 12 [80%] [on]
-root@spencer-gen2:~# 
-root@spencer-gen2:~# arecord -D hw:0,0 -V mono -c 2 -f S16_LE -r 16000 -t wav mic.wav
-Recording WAVE 'mic.wav' : Signed 16 bit Little Endian, Rate 16000 Hz, Stereo
-#+                                                 | 00%^CAborted by signal Interrupt...
-root@spencer-gen2:~# 
-root@spencer-gen2:~# aplay mic.wav 
-Playing WAVE 'mic.wav' : Signed 16 bit Little Endian, Rate 16000 Hz, Stereo
-root@spencer-gen2:~# 
-```
-* Volume control:
-```
-root@spencer-gen2:~# amixer set 'PCM' 110
-Simple mixer control 'PCM',0
-  Capabilities: pvolume
-  Playback channels: Front Left - Front Right
-  Limits: Playback 0 - 192
-  Mono:
-  Front Left: Playback 110 [57%]
-  Front Right: Playback 110 [57%]
-root@spencer-gen2:~# aplay mic.wav 
-Playing WAVE 'mic.wav' : Signed 16 bit Little Endian, Rate 16000 Hz, Stereo
-root@spencer-gen2:~# 
-root@spencer-gen2:~# amixer set 'PCM' 160
-Simple mixer control 'PCM',0
-  Capabilities: pvolume
-  Playback channels: Front Left - Front Right
-  Limits: Playback 0 - 192
-  Mono:
-  Front Left: Playback 160 [83%]
-  Front Right: Playback 160 [83%]
-root@spencer-gen2:~# 
-root@spencer-gen2:~# 
-```
-* play a wav file:
-```
-root@spencer-gen2:~# aplay /unit_tests/ASRC/audio8k16S.wav
-Playing WAVE '/unit_tests/ASRC/audio8k16S.wav' : Signed 16 bit Little Endian, Rate 8000 Hz, Stereo
-root@spencer-gen2:~# 
-root@spencer-gen2:~# 
-root@spencer-gen2:~# 
-```
-* pulseaudio tests:
-```
-root@spencer-gen2:~# pulseaudio -k
-root@spencer-gen2:~# pulseaudio --start
-W: [pulseaudio] main.c: This program is not intended to be run as root (unless --system is specified).
-root@spencer-gen2:~# 
-root@spencer-gen2:~# 
-root@spencer-gen2:~# 
-root@spencer-gen2:~# 
-root@spencer-gen2:~# pactl list cards
-Card #0
-  Name: alsa_card.platform-sound-bt-sco
-  Driver: module-alsa-card.c
-  Owner Module: 6
-  Properties:
-	alsa.card = "1"
-	alsa.card_name = "bt-sco-audio"
-	alsa.long_card_name = "bt-sco-audio"
-	device.bus_path = "platform-sound-bt-sco"
-	sysfs.path = "/devices/platform/sound-bt-sco/sound/card1"
-	device.form_factor = "internal"
-	device.string = "1"
-	device.description = "Built-in Audio"
-	module-udev-detect.discovered = "1"
-	device.icon_name = "audio-card"
-  Profiles:
-	input:mono-fallback: Mono Input (sinks: 0, sources: 1, priority: 1, available: yes)
-	output:mono-fallback: Mono Output (sinks: 1, sources: 0, priority: 100, available: yes)
-	output:mono-fallback+input:mono-fallback: Mono Output + Mono Input (sinks: 1, sources: 1, priority: 101, available: yes)
-	off: Off (sinks: 0, sources: 0, priority: 0, available: yes)
-  Active Profile: output:mono-fallback+input:mono-fallback
-  Ports:
-	analog-input: Analog Input (type: Analog, priority: 10000, latency offset: 0 usec, availability unknown)
-	  Part of profile(s): input:mono-fallback, output:mono-fallback+input:mono-fallback
-	analog-output: Analog Output (type: Analog, priority: 9900, latency offset: 0 usec, availability unknown)
-	  Part of profile(s): output:mono-fallback, output:mono-fallback+input:mono-fallback
+<img width="373" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/63b3d16d-2ddc-467b-8c4b-5a8df4be7e8c">
 
-Card #1
-  Name: alsa_card.platform-sound
-  Driver: module-alsa-card.c
-  Owner Module: 7
-  Properties:
-	alsa.card = "0"
-	alsa.card_name = "SpencerGen_2"
-	alsa.long_card_name = "SpencerGen_2"
-	device.bus_path = "platform-sound"
-	sysfs.path = "/devices/platform/sound/sound/card0"
-	device.form_factor = "internal"
-	device.string = "0"
-	device.description = "Built-in Audio"
-	module-udev-detect.discovered = "1"
-	device.icon_name = "audio-card"
-  Profiles:
-	input:stereo-fallback: Stereo Input (sinks: 0, sources: 1, priority: 51, available: yes)
-	output:stereo-fallback: Stereo Output (sinks: 1, sources: 0, priority: 5100, available: yes)
-	output:stereo-fallback+input:stereo-fallback: Stereo Output + Stereo Input (sinks: 1, sources: 1, priority: 5151, available: yes)
-	off: Off (sinks: 0, sources: 0, priority: 0, available: yes)
-  Active Profile: output:stereo-fallback+input:stereo-fallback
-  Ports:
-	analog-input-mic: Microphone (type: Mic, priority: 8700, latency offset: 0 usec, availability unknown)
-	  Properties:
-		device.icon_name = "audio-input-microphone"
-	  Part of profile(s): input:stereo-fallback, output:stereo-fallback+input:stereo-fallback
-	analog-output: Analog Output (type: Analog, priority: 9900, latency offset: 0 usec, availability unknown)
-	  Part of profile(s): output:stereo-fallback, output:stereo-fallback+input:stereo-fallback
-	analog-output-headphones: Headphones (type: Headphones, priority: 9900, latency offset: 0 usec, availability unknown)
-	  Properties:
-		device.icon_name = "audio-headphones"
-	  Part of profile(s): output:stereo-fallback, output:stereo-fallback+input:stereo-fallback
-root@spencer-gen2:~#
-root@spencer-gen2:~#
-root@spencer-gen2:~#
-root@spencer-gen2:~#
-root@spencer-gen2:~# pacmd list-sinks | grep "name:"
-  name: <alsa_output.platform-sound-bt-sco.mono-fallback>
-  name: <alsa_output.platform-sound.stereo-fallback>
-root@spencer-gen2:~#
-root@spencer-gen2:~#
-root@spencer-gen2:~# paplay -p --device=alsa_output.platform-sound.stereo-fallback /unit_tests/ASRC/audio8k16S.wav 
-root@spencer-gen2:~#
-root@spencer-gen2:~#
+## Choosing different camera resolutions
 ```
+//On the display a screen like below will be displayed 
+//Click on the highlighted link in the image to check the different camera resolutions 
+
+```
+<img width="730" alt="resolution" src="https://github.com/Rajeshvce/Testing/assets/94607772/3736d34c-92fc-40c5-9b8e-4cc65ae5641f">
+
+```
+//Then you will get a screen like below 
+//In this screen one can select the QVGA, VGA, HD, Full HD resolutions for the cameras
+//and preview it
+
+```
+
+<img width="663" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/bb34bd24-dddb-4c00-a10d-99be8954a899">
+
+
+
