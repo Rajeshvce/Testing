@@ -129,3 +129,4 @@ js: Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort
 ```
 <img width="587" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/52470fee-0dc8-4ead-b4f4-969cb65cf3f2">
 
+* NOTE : export the flag QT_QPA_EGLFS_ROTATION=90 to rotate the screen by an angle of 90 degrees
