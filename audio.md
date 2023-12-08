@@ -45,25 +45,22 @@ Init Parameters:
 js: Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort'.
  
 ```
-* To test camera 
+# To Test camera
+<img width="709" alt="camera" src="https://github.com/Rajeshvce/Testing/assets/94607772/2b7079b5-660f-4e25-9923-e58684cd8a96">
+
 ```
-//On the display the following screen is displayed
-root@spencer-gen2:~# amixer sset Lineout unmute
-Simple mixer control 'Lineout',0
-  Capabilities: pvolume pswitch pswitch-joined
-  Playback channels: Front Left - Front Right
-  Limits: Playback 0 - 31
-  Mono:
-  Front Left: Playback 18 [58%] [-6.50dB] [on]
-  Front Right: Playback 18 [58%] [-6.50dB] [on]
-root@spencer-gen2:~# 
+//On the display a screen like above will be displayed 
+//Click on the highlighted link in the image to check the camera
+/Then you will get a screen like this  
 ```
-* GP unmute audio and enable amplifier
+<img width="737" alt="camera" src="https://github.com/Rajeshvce/Testing/assets/94607772/a58573d9-b3f4-4176-b084-e8c860914279">
+
 ```
-root@spencer-gen2:~# gpioset 3 28=0
-root@spencer-gen2:~# gpioset 3 29=1
-root@spencer-gen2:~# 
+//In this screen click the button open camera and give the access to camera 
+//Then you will be able to see the preview of camera
+
 ```
+
 * capture from Microphone:
 ```
 root@spencer-gen2:~# amixer set 'PCM' 110
