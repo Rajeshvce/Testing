@@ -129,4 +129,21 @@ js: Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort
 ```
 <img width="587" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/52470fee-0dc8-4ead-b4f4-969cb65cf3f2">
 
+## Testing basic peer to peer connection
+
+```
+//On the display a screen like below will be displayed 
+//Click on the highlighted link in the image to test the peer to peer connection
+
+```
+<img width="334" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/1cafec8b-1d35-4ae3-af49-576ba824c93a">
+
+```
+//Then you will get a screen like below 
+//Open the two different tabs using the same highleted link and click the start in both tabs
+//You can see the camera preview of both tabs side by side as below
+```
+<img width="711" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/d49f3ba5-3a18-4759-881b-aa45c4dbf589">
+
+
 * NOTE : export the flag QT_QPA_EGLFS_ROTATION=90 to rotate the screen by an angle of 90 degrees
