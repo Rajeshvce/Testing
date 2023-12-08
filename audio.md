@@ -99,5 +99,33 @@ js: Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort
 
 <img width="663" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/bb34bd24-dddb-4c00-a10d-99be8954a899">
 
+## Taking the snapshot from the browser
+```
+//On the display a screen like below will be displayed 
+//Click on the highlighted link in the image to take a snapshot from the camera
 
+```
+<img width="495" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/fdc881a2-82b2-4d61-ab69-f1569cf65100">
+
+```
+//Then you will get a screen like below 
+//One can take a snapshot by clicking the **Take snapshot** button there
+
+```
+<img width="271" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/3667614c-ba0c-462b-9399-e9f3dbaaeb3f">
+
+## Testing Audio output
+```
+//On the display a screen like below will be displayed 
+//Click on the highlighted link in the image to test the audio output from the browser
+
+```
+<img width="394" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/dba596a6-7e0d-4be4-ad00-18607fe516f9">
+
+```
+//Then you will get a screen like below 
+//One can play the second video and listen to the audio in speakers
+
+```
+<img width="587" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/52470fee-0dc8-4ead-b4f4-969cb65cf3f2">
 
