@@ -48,8 +48,6 @@ js: Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort
 * To test camera 
 ```
 //On the display the following screen is displayed
-<img width="709" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/0b22696b-a9e9-46f0-932d-d25168e9731c">
-
 root@spencer-gen2:~# amixer sset Lineout unmute
 Simple mixer control 'Lineout',0
   Capabilities: pvolume pswitch pswitch-joined
