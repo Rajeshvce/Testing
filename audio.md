@@ -8,7 +8,8 @@
 * Logged into a shell console
 * Connect to wifi(see qvts/wifi.md)
 * Append the following line to the /etc/resolve.conf => nameserver 8.8.8.8
-* Unmute the speaker and enable the capture from the microphone (see qvts/audio.md)
+* Unmute the speaker and enable the capture from the microphone (see qvts/audio.md) 
+  to check audio related things
 
 ## Start the simple browser application
 ```
@@ -50,79 +51,73 @@ js: Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort
 ## Query the Video and Audio devices
 
 * A screen similar to the one shown below will appear on the display.
-* Click on the highlighted link to query the video and audio devices form the browser
+* Click on the highlighted link, similar to the one shown in the image, to query the video and audio devices from the 
+  browser
 
 <img width="576" alt="query" src="https://github.com/Rajeshvce/Testing/assets/94607772/7de74c08-16ab-4632-bd01-19806ab94df7">
 
 
-* Then you will get a screen like below 
-* In this screen, one can be able to select the different video devices and audio devices 
-* One can see the preview of the cameras selected on the video source section 
-
+* Afterwards, a new tab resembling the one displayed below will open on the screen.
+* Within this tab, one can view the various audio and video devices available on the board.
+* The selected camera from the **video source** dropdown will provide a preview on the screen.
 
 <img width="623" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/07ddcadf-b60a-4609-b6df-3e9fedb4daab">
 
 ## Camera Testing
 
-
-* On the display a screen like below will be displayed 
-* Click on the highlighted link in the image to test the camera in browser
+* A screen similar to the one shown below will appear on the display.
+* Click on the highlighted link, similar to the one shown in the image, to test the camera streaming in browser
 
 
 <img width="709" alt="camera" src="https://github.com/Rajeshvce/Testing/assets/94607772/2b7079b5-660f-4e25-9923-e58684cd8a96">
 
 
-* Then you will get a screen like below 
-* In this screen click the button ** open camera** and give the access to camera 
-* Then you will be able to see the preview of camera on the display
-
-
+* Afterwards, a new tab resembling the one displayed below will open on the screen.
+* Within this tab, click the button **open camera** and give the access to camera 
+* Then a preview of the camera will be displayed on the screen
 
 <img width="373" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/63b3d16d-2ddc-467b-8c4b-5a8df4be7e8c">
 
 ## Choosing different camera resolutions
 
-* On the display a screen like below will be displayed 
-* Click on the highlighted link in the image to check the different camera resolutions 
+* A screen similar to the one shown below will appear on the display.
+* Click on the highlighted link, similar to the one shown in the image, to check the different camera resolutions 
 
 
 <img width="730" alt="resolution" src="https://github.com/Rajeshvce/Testing/assets/94607772/3736d34c-92fc-40c5-9b8e-4cc65ae5641f">
 
 
-* Then you will get a screen like below 
-* In this screen one can select the QVGA, VGA, HD, Full HD resolutions for the cameras
-* and preview it
-
-
-
+* Afterwards, a new tab resembling the one displayed below will open on the screen.
+* Within this tab, one can select for various camera resolutions—such as QVGA, VGA, HD, and Full HD and preview them accordingly.
+  
 <img width="663" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/bb34bd24-dddb-4c00-a10d-99be8954a899">
 
 ## Taking the snapshot from the browser
 
-* On the display a screen like below will be displayed 
-* Click on the highlighted link in the image to take a snapshot from the camera
+* A screen similar to the one shown below will appear on the display.
+* Click on the highlighted link, similar to the one shown in the image, to take a snapshot from the camera
 
 
 <img width="495" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/fdc881a2-82b2-4d61-ab69-f1569cf65100">
 
 
-* Then you will get a screen like below 
-* One can take a snapshot by clicking the **Take snapshot** button there
+* Afterwards,a new tab resembling the one displayed below will open on the screen.
+* Within this tab, One can take a snapshot by clicking the **Take snapshot** button there
 
 
 <img width="271" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/3667614c-ba0c-462b-9399-e9f3dbaaeb3f">
 
 ## Testing Audio output
 
-* On the display a screen like below will be displayed 
-* Click on the highlighted link in the image to test the audio output from the browser
+* A screen similar to the one shown below will appear on the display.
+* Click on the highlighted link, similar to the one shown in the image, to test the audio output from the browser
 
 
 <img width="394" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/dba596a6-7e0d-4be4-ad00-18607fe516f9">
 
 
-* Then you will get a screen like below 
-* One can play the second video and listen to the audio in speakers
+* Afterwards, new tab resembling the one displayed below will open on the screen.
+* Within this tab, users can play the second video and listen to the audio through the speakers.
 
 
 <img width="587" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/52470fee-0dc8-4ead-b4f4-969cb65cf3f2">
@@ -130,18 +125,17 @@ js: Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort
 ## Testing basic peer to peer connection
 
 
-* On the display a screen like below will be displayed 
-* Click on the highlighted link in the image to test the peer to peer connection
+* A screen similar to the one shown below will appear on the display.
+* Click on the highlighted link, similar to the one shown in the image, to test the peer to peer connection
 
 
 <img width="334" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/1cafec8b-1d35-4ae3-af49-576ba824c93a">
 
-
-* Then you will get a screen like below 
-* Open the two different tabs using the same highleted link and click the start in both tabs
-* You can see the camera preview of both tabs side by side as below
+* Afterwards, new tab resembling the one displayed below will open on the screen.
+* Open two separate tabs using the same highlighted link and proceed to click **Start** in both tabs.
+* This action will display side-by-side camera previews from both tabs.
 
 <img width="711" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/d49f3ba5-3a18-4759-881b-aa45c4dbf589">
 
-
-* NOTE : export the flag QT_QPA_EGLFS_ROTATION=90 to rotate the screen by an angle of 90 degrees
+&nbsp;
+* **NOTE** : export the flag QT_QPA_EGLFS_ROTATION=90 to rotate the screen by an angle of 90 degrees
