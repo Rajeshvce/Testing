@@ -165,7 +165,7 @@ js: Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort
 <img width="756" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/d17f7bf2-53f4-42d0-93f6-9d25e458177e">
 
 
-# GPU Overview
+# GPU Verification Test 
 
 * GPU usage for Camera Streaming in https://webrtc.github.io/samples/src/content/getusermedia/resolution/ with **FULL HD**
 
