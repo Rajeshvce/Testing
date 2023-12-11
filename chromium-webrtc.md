@@ -165,59 +165,66 @@ js: Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort
 <img width="756" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/d17f7bf2-53f4-42d0-93f6-9d25e458177e">
 
 
-# GPU Info
+# GPU Overview
 
-* GPU usage for Camera Streaming in https://webrtc.github.io/samples/
+* GPU usage for Camera Streaming in https://webrtc.github.io/samples/src/content/getusermedia/resolution/ with **FULL HD**
 
 ```
 root@spencer-gen2:~#
 root@spencer-gen2:~# gmem_info
  Pid          Total      Reserved    Contiguous       Virtual      Nonpaged    Name
- 2193    43,329,862    40,872,262     2,457,600             0             0    /usr/share/examples/webenginewidgets/simplebrowser/simplebrowser
+ 1344    49,640,046    47,182,446     2,457,600             0             0    /usr/share/examples/webenginewidgets/simplebrowser/simplebrowser
  ------------------------------------------------------------------------------
-    1    43,329,862    40,872,262     2,457,600             0             0    Summary
-    -             -   227,563,194             -             -             -    Available
-GPU Idle time:  67537.648438 ms
+    1    49,640,046    47,182,446     2,457,600             0             0    Summary
+    -             -   221,253,010             -             -             -    Available
+GPU Idle time:  85525.093750 ms
 root@spencer-gen2:~# 
 root@spencer-gen2:~#
 root@spencer-gen2:~# top
-Mem: 855184K used, 887280K free, 15056K shrd, 14048K buff, 318984K cached
-CPU: 11.7% usr  2.7% sys  0.0% nic 84.9% idle  0.0% io  0.5% irq  0.0% sirq
-Load average: 0.20 0.41 0.39 2/223 2076
+Mem: 849324K used, 893140K free, 30460K shrd, 11740K buff, 327732K cached
+CPU: 29.0% usr  2.5% sys  0.0% nic 67.8% idle  0.0% io  0.4% irq  0.0% sirq
+Load average: 0.51 0.50 0.37 2/212 1410
   PID  PPID USER     STAT   VSZ %VSZ CPU %CPU COMMAND
-1997  1080 root     S    2113m123.8   1  6.5 /usr/share/examples/webenginewidgets/simplebrowser/simplebrowser https://webrtc.github.
-2034  2002 root     S    25.2g1516.8   0  4.0 /usr/libexec/QtWebEngineProcess --type=renderer --webengine-schemes=qrc:sV --no-sandbo
-2047  1997 root     S     728m 42.6   1  2.9 /usr/libexec/QtWebEngineProcess --type=utility --utility-sub-type=video_capture.mojom.V
-2046  1997 root     S     729m 42.7   3  1.2 /usr/libexec/QtWebEngineProcess --type=utility --utility-sub-type=audio.mojom.AudioServ
-  184     2 root     SW<      0  0.0   0  0.1 [galcore_deamon/]
-1819     2 root     IW       0  0.0   3  0.1 [kworker/3:0-eve]
-2076  1080 root     R     3508  0.2   0  0.0 top
+ 1394  1344 root     S     671m 39.3   0 18.7 /usr/libexec/QtWebEngineProcess --type=utility --utility-sub-type=video_capture.mojom.V
+ 1344  1071 root     S    2189m128.2   2  9.1 /usr/share/examples/webenginewidgets/simplebrowser/simplebrowser https://webrtc.github.
+ 1382  1349 root     S    25.1g1509.1   1  3.1 /usr/libexec/QtWebEngineProcess --type=renderer --webengine-schemes=qrc:sV --no-sandbo
+  184     2 root     SW<      0  0.0   3  0.1 [galcore_deamon/]
+ 1410  1071 root     R     3508  0.2   1  0.0 top
+  111     2 root     IW       0  0.0   1  0.0 [kworker/1:2-eve]
+   34     2 root     IW       0  0.0   2  0.0 [kworker/2:1-eve]
+ 1305     2 root     IW       0  0.0   0  0.0 [kworker/0:0-eve]
 
+=> Approximately 67.8% of cpu is idle and about 31% of cpu is used by the simplebrowser application while streaming the camera in FULL HD resolution .
 ```
 
-* GPU usage for youtube video
+* GPU usage for youtube video (https://www.youtube.com/watch?v=8iEBHehYQtY) in 480P
 
 ```
 root@spencer-gen2:~# 
 root@spencer-gen2:~# gmem_info
  Pid          Total      Reserved    Contiguous       Virtual      Nonpaged    Name
- 1286    49,967,702    47,510,102     2,457,600             0             0    /usr/share/examples/webenginewidgets/simplebrowser/simplebrowser
+ 1226    43,132,621    40,675,021     2,457,600             0             0    /usr/share/examples/webenginewidgets/simplebrowser/simplebrowser
  ------------------------------------------------------------------------------
-    1    49,967,702    47,510,102     2,457,600             0             0    Summary
-    -             -   220,925,354             -             -             -    Available
-GPU Idle time:  67086.851562 ms
+    1    43,132,621    40,675,021     2,457,600             0             0    Summary
+    -             -   227,760,435             -             -             -    Available
+GPU Idle time:  75626.187500 ms
 root@spencer-gen2:~#
 root@spencer-gen2:~#
 root@spencer-gen2:~# top
-Mem: 1020176K used, 722288K free, 46600K shrd, 11684K buff, 339244K cached
-CPU: 19.5% usr  4.2% sys  0.0% nic 75.0% idle  0.0% io  0.8% irq  0.2% sirq
-Load average: 1.71 1.02 0.42 2/231 1352
+Mem: 1098276K used, 644188K free, 45668K shrd, 19892K buff, 364152K cached
+CPU: 20.8% usr  2.2% sys  0.0% nic 76.2% idle  0.0% io  0.6% irq  0.0% sirq
+Load average: 0.99 1.38 1.30 1/217 1711
   PID  PPID USER     STAT   VSZ %VSZ CPU %CPU COMMAND
- 1323  1292 root     S    25.2g1515.8   0 12.1 /usr/libexec/QtWebEngineProcess --type=renderer --webengine-schemes=qrc:sV --no-sandbo
- 1286  1069 root     S    2593m151.9   2 10.1 /usr/share/examples/webenginewidgets/simplebrowser/simplebrowser https://www.youtube.co
- 1341  1286 root     S     584m 34.2   2  0.7 /usr/libexec/QtWebEngineProcess --type=utility --utility-sub-type=audio.mojom.AudioServ
-  184     2 root     SW<      0  0.0   1  0.3 [galcore_deamon/]
- 1088     2 root     IW<      0  0.0   1  0.1 [kworker/u9:1-MO]
-  948     2 root     IW       0  0.0   0  0.1 [kworker/0:3-eve]
- 1282     2 root     IW<      0  0.0   1  0.1 [kworker/u9:3-MO]
+1661  1629 root     S    25.2g1516.0   2 14.5 /usr/libexec/QtWebEngineProcess --type=renderer --webengine-schemes=qrc:sV --no-sandbo
+1624  1071 root     S    2334m136.7   1  7.4 /usr/share/examples/webenginewidgets/simplebrowser/simplebrowser https://www.youtube.co
+1677  1624 root     S     657m 38.5   3  0.7 /usr/libexec/QtWebEngineProcess --type=utility --utility-sub-type=audio.mojom.AudioServ
+  185     2 root     SW<      0  0.0   0  0.2 [galcore_deamon/]
+1559     2 root     IW       0  0.0   0  0.1 [kworker/0:1-eve]
+1711  1071 root     R     3508  0.2   1  0.0 top
+1427     2 root     IW       0  0.0   3  0.0 [kworker/3:1-eve]
+1425     2 root     IW       0  0.0   2  0.0 [kworker/2:0-eve]
+1477     2 root     IW       0  0.0   1  0.0 [kworker/1:2-eve]
+1289     2 root     IW       0  0.0   2  0.0 [kworker/u8:4-kc]
+
+=>  Approximately 76.2% of cpu is idle and about 21.9% of cpu is used by the simplebrowser application while playing the youtube video in 480P
 ```
