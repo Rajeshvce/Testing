@@ -113,8 +113,8 @@ js: Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort
 * Afterwards, new tab resembling the one displayed below will open on the screen.
 * Within this tab, users can play the second video and listen to the audio through the speakers.
 
+<img width="663" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/be8b7e01-bba2-4f2c-bdd8-a6ad5562a18c">
 
-<img width="587" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/52470fee-0dc8-4ead-b4f4-969cb65cf3f2">
 
 ## Testing basic peer to peer connection
 
