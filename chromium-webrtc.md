@@ -11,7 +11,7 @@
 * Unmute the speaker and enable the capture from the microphone (see qvts/audio.md) 
   to verify audio related things
 
-## Version info
+## Version Info
 * Qtwebengine_Version => 6.2.6
 * Chromium_Version    => 94.0.4606.126
 
