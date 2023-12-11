@@ -9,7 +9,7 @@
 * Connect to wifi(see qvts/wifi.md)
 * Append the following line to the /etc/resolve.conf => nameserver 8.8.8.8
 * Unmute the speaker and enable the capture from the microphone (see qvts/audio.md) 
-  to check audio related things
+  to verify audio related things
 
 ## Start the simple browser application
 ```
