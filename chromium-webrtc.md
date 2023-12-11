@@ -10,6 +10,23 @@
 * Append the following line to the /etc/resolve.conf => nameserver 8.8.8.8
 * Unmute the speaker and enable the capture from the microphone (see qvts/audio.md) 
   to verify audio related things
+* Below changes must be applied on the target(/etc/iptables/). These changes allow the
+  data transfer by accepting the incoming traffic 
+```
+diff --git a/recipes-extended/iptables/iptables/iptables.rules b/recipes-extended/iptables/iptables/iptables.rules
+index 0888006..35c1149 100644
+--- a/recipes-extended/iptables/iptables/iptables.rules
++++ b/recipes-extended/iptables/iptables/iptables.rules
+@@ -3,7 +3,7 @@
+# ---------------------------------------------------------------------------------------------------------------------
+ 
+*filter
+-:INPUT DROP [0:0]
++:INPUT ACCEPT [0:0]
+:FORWARD DROP [0:0]
+:OUTPUT ACCEPT [0:0]
+-A INPUT -i lo -j ACCEPT
+```
 
 ## Version Info
 * Qtwebengine_Version => 6.2.6
@@ -133,6 +150,20 @@ js: Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort
 * This action will display side-by-side camera previews from both tabs.
 
 <img width="711" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/d49f3ba5-3a18-4759-881b-aa45c4dbf589">
+
+## Testing data transfer 
+
+* A screen similat to the one shown below will appear on the display.
+* Click on the highlighted link, similat to the one shown in the image, to test the data transfer
+
+<img width="464" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/dfca40b1-20e8-4ad2-8a24-619e8ba60f66">
+
+* Afterwards, new tab resembling the one displayed below will open on the screen.
+* Within this tab, click the button **Generate and send data** and then the user will be
+  notified after successfull data transfer completion similar to the below image
+
+<img width="756" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/d17f7bf2-53f4-42d0-93f6-9d25e458177e">
+
 
 # GPU Info
 
