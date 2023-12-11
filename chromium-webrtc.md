@@ -133,3 +133,60 @@ js: Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort
 * This action will display side-by-side camera previews from both tabs.
 
 <img width="711" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/d49f3ba5-3a18-4759-881b-aa45c4dbf589">
+
+# GPU Info
+
+* GPU usage for Camera Streaming in https://webrtc.github.io/samples/
+
+```
+root@spencer-gen2:~#
+root@spencer-gen2:~# gmem_info
+ Pid          Total      Reserved    Contiguous       Virtual      Nonpaged    Name
+ 2193    43,329,862    40,872,262     2,457,600             0             0    /usr/share/examples/webenginewidgets/simplebrowser/simplebrowser
+ ------------------------------------------------------------------------------
+    1    43,329,862    40,872,262     2,457,600             0             0    Summary
+    -             -   227,563,194             -             -             -    Available
+GPU Idle time:  67537.648438 ms
+root@spencer-gen2:~# 
+root@spencer-gen2:~#
+root@spencer-gen2:~# top
+Mem: 855184K used, 887280K free, 15056K shrd, 14048K buff, 318984K cached
+CPU: 11.7% usr  2.7% sys  0.0% nic 84.9% idle  0.0% io  0.5% irq  0.0% sirq
+Load average: 0.20 0.41 0.39 2/223 2076
+  PID  PPID USER     STAT   VSZ %VSZ CPU %CPU COMMAND
+1997  1080 root     S    2113m123.8   1  6.5 /usr/share/examples/webenginewidgets/simplebrowser/simplebrowser https://webrtc.github.
+2034  2002 root     S    25.2g1516.8   0  4.0 /usr/libexec/QtWebEngineProcess --type=renderer --webengine-schemes=qrc:sV --no-sandbo
+2047  1997 root     S     728m 42.6   1  2.9 /usr/libexec/QtWebEngineProcess --type=utility --utility-sub-type=video_capture.mojom.V
+2046  1997 root     S     729m 42.7   3  1.2 /usr/libexec/QtWebEngineProcess --type=utility --utility-sub-type=audio.mojom.AudioServ
+  184     2 root     SW<      0  0.0   0  0.1 [galcore_deamon/]
+1819     2 root     IW       0  0.0   3  0.1 [kworker/3:0-eve]
+2076  1080 root     R     3508  0.2   0  0.0 top
+
+```
+
+* GPU usage for youtube video
+
+```
+root@spencer-gen2:~# 
+root@spencer-gen2:~# gmem_info
+ Pid          Total      Reserved    Contiguous       Virtual      Nonpaged    Name
+ 1286    49,967,702    47,510,102     2,457,600             0             0    /usr/share/examples/webenginewidgets/simplebrowser/simplebrowser
+ ------------------------------------------------------------------------------
+    1    49,967,702    47,510,102     2,457,600             0             0    Summary
+    -             -   220,925,354             -             -             -    Available
+GPU Idle time:  67086.851562 ms
+root@spencer-gen2:~#
+root@spencer-gen2:~#
+root@spencer-gen2:~# top
+Mem: 1020176K used, 722288K free, 46600K shrd, 11684K buff, 339244K cached
+CPU: 19.5% usr  4.2% sys  0.0% nic 75.0% idle  0.0% io  0.8% irq  0.2% sirq
+Load average: 1.71 1.02 0.42 2/231 1352
+  PID  PPID USER     STAT   VSZ %VSZ CPU %CPU COMMAND
+ 1323  1292 root     S    25.2g1515.8   0 12.1 /usr/libexec/QtWebEngineProcess --type=renderer --webengine-schemes=qrc:sV --no-sandbo
+ 1286  1069 root     S    2593m151.9   2 10.1 /usr/share/examples/webenginewidgets/simplebrowser/simplebrowser https://www.youtube.co
+ 1341  1286 root     S     584m 34.2   2  0.7 /usr/libexec/QtWebEngineProcess --type=utility --utility-sub-type=audio.mojom.AudioServ
+  184     2 root     SW<      0  0.0   1  0.3 [galcore_deamon/]
+ 1088     2 root     IW<      0  0.0   1  0.1 [kworker/u9:1-MO]
+  948     2 root     IW       0  0.0   0  0.1 [kworker/0:3-eve]
+ 1282     2 root     IW<      0  0.0   1  0.1 [kworker/u9:3-MO]
+```
