@@ -11,6 +11,10 @@
 * Unmute the speaker and enable the capture from the microphone (see qvts/audio.md) 
   to verify audio related things
 
+## Version info
+* Qtwebengine_Version => 6.2.6
+* Chromium_Version    => 94.0.4606.126
+
 ## Start the simple browser application
 ```
 root@spencer-gen2:~#
