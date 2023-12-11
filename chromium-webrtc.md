@@ -54,8 +54,7 @@ js: Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort
 * Click on the highlighted link, similar to the one shown in the image, to query the video and audio devices from the 
   browser
 
-<img width="576" alt="query" src="https://github.com/Rajeshvce/Testing/assets/94607772/7de74c08-16ab-4632-bd01-19806ab94df7">
-
+<img width="366" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/9bfc58e7-aba8-4bfa-8dd2-4a0e1bbf6b9f">
 
 * Afterwards, a new tab resembling the one displayed below will open on the screen.
 * Within this tab, one can view the various audio and video devices available on the board.
@@ -69,8 +68,7 @@ js: Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort
 * Click on the highlighted link, similar to the one shown in the image, to test the camera streaming in browser
 
 
-<img width="709" alt="camera" src="https://github.com/Rajeshvce/Testing/assets/94607772/2b7079b5-660f-4e25-9923-e58684cd8a96">
-
+<img width="481" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/3d2e07dc-89c5-4312-97a0-b8f8b5b6b476">
 
 * Afterwards, a new tab resembling the one displayed below will open on the screen.
 * Within this tab, click the button **open camera** and give the access to camera 
@@ -83,9 +81,7 @@ js: Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort
 * A screen similar to the one shown below will appear on the display.
 * Click on the highlighted link, similar to the one shown in the image, to check the different camera resolutions 
 
-
-<img width="730" alt="resolution" src="https://github.com/Rajeshvce/Testing/assets/94607772/3736d34c-92fc-40c5-9b8e-4cc65ae5641f">
-
+<img width="484" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/4cef922e-7090-4ed5-9b35-068e053047c6">
 
 * Afterwards, a new tab resembling the one displayed below will open on the screen.
 * Within this tab, one can select for various camera resolutions—such as QVGA, VGA, HD, and Full HD and preview them accordingly.
@@ -97,8 +93,7 @@ js: Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort
 * A screen similar to the one shown below will appear on the display.
 * Click on the highlighted link, similar to the one shown in the image, to take a snapshot from the camera
 
-
-<img width="495" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/fdc881a2-82b2-4d61-ab69-f1569cf65100">
+<img width="484" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/aeb39d64-82c6-4a9c-ab9d-5153a6d5299c">
 
 
 * Afterwards,a new tab resembling the one displayed below will open on the screen.
@@ -112,8 +107,7 @@ js: Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort
 * A screen similar to the one shown below will appear on the display.
 * Click on the highlighted link, similar to the one shown in the image, to test the audio output from the browser
 
-
-<img width="394" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/dba596a6-7e0d-4be4-ad00-18607fe516f9">
+<img width="241" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/24b884d0-f791-4f8c-af66-03f5cdc82ba0">
 
 
 * Afterwards, new tab resembling the one displayed below will open on the screen.
@@ -128,14 +122,10 @@ js: Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort
 * A screen similar to the one shown below will appear on the display.
 * Click on the highlighted link, similar to the one shown in the image, to test the peer to peer connection
 
-
-<img width="334" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/1cafec8b-1d35-4ae3-af49-576ba824c93a">
+<img width="255" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/43dd5cc7-de6b-402b-8e85-8b216eee9d80">
 
 * Afterwards, new tab resembling the one displayed below will open on the screen.
 * Open two separate tabs using the same highlighted link and proceed to click **Start** in both tabs.
 * This action will display side-by-side camera previews from both tabs.
 
 <img width="711" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/d49f3ba5-3a18-4759-881b-aa45c4dbf589">
-
-&nbsp;
-* **NOTE** : export the flag QT_QPA_EGLFS_ROTATION=90 to rotate the screen by an angle of 90 degrees
