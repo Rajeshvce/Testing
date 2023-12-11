@@ -10,8 +10,8 @@
 * Append the following line to the /etc/resolve.conf => nameserver 8.8.8.8
 * Unmute the speaker and enable the capture from the microphone (see qvts/audio.md) 
   to verify audio related things
-* Below changes must be applied on the target(/etc/iptables/) to verify data transfer.
-  These changes allow the data transfer by accepting the incoming traffic 
+* **Below changes must be applied on the target(/etc/iptables/) to verify data transfer.**
+  **These changes allow the data transfer by accepting the incoming traffic**
 ```
 diff --git a/recipes-extended/iptables/iptables/iptables.rules b/recipes-extended/iptables/iptables/iptables.rules
 index 0888006..35c1149 100644
