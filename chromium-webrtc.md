@@ -197,34 +197,32 @@ Load average: 0.51 0.50 0.37 2/212 1410
 => Approximately 67.8% of cpu is idle and about 31% of cpu is used by the simplebrowser application while streaming the camera in FULL HD resolution .
 ```
 
-* GPU usage for youtube video (https://www.youtube.com/watch?v=8iEBHehYQtY) in 480P
+* GPU usage for youtube video  (https://www.youtube.com/watch?v=y9n6HkftavM&ab_channel=8KParadise) in 480P
 
 ```
 root@spencer-gen2:~# 
 root@spencer-gen2:~# gmem_info
  Pid          Total      Reserved    Contiguous       Virtual      Nonpaged    Name
- 1226    43,132,621    40,675,021     2,457,600             0             0    /usr/share/examples/webenginewidgets/simplebrowser/simplebrowser
+ 1431    55,458,470    53,000,870     2,457,600             0             0    /usr/share/examples/webenginewidgets/simplebrowser/simplebrowser
  ------------------------------------------------------------------------------
-    1    43,132,621    40,675,021     2,457,600             0             0    Summary
-    -             -   227,760,435             -             -             -    Available
-GPU Idle time:  75626.187500 ms
+    1    55,458,470    53,000,870     2,457,600             0             0    Summary
+    -             -   215,434,586             -             -             -    Available
+GPU Idle time:  372820.875000 ms
 root@spencer-gen2:~#
 root@spencer-gen2:~#
 root@spencer-gen2:~# top
-Mem: 1098276K used, 644188K free, 45668K shrd, 19892K buff, 364152K cached
-CPU: 20.8% usr  2.2% sys  0.0% nic 76.2% idle  0.0% io  0.6% irq  0.0% sirq
-Load average: 0.99 1.38 1.30 1/217 1711
+Mem: 1042212K used, 700252K free, 51356K shrd, 14124K buff, 344896K cached
+CPU: 27.2% usr  3.2% sys  0.0% nic 68.5% idle  0.1% io  0.6% irq  0.1% sirq
+Load average: 1.05 1.37 0.76 2/218 1505
   PID  PPID USER     STAT   VSZ %VSZ CPU %CPU COMMAND
-1661  1629 root     S    25.2g1516.0   2 14.5 /usr/libexec/QtWebEngineProcess --type=renderer --webengine-schemes=qrc:sV --no-sandbo
-1624  1071 root     S    2334m136.7   1  7.4 /usr/share/examples/webenginewidgets/simplebrowser/simplebrowser https://www.youtube.co
-1677  1624 root     S     657m 38.5   3  0.7 /usr/libexec/QtWebEngineProcess --type=utility --utility-sub-type=audio.mojom.AudioServ
-  185     2 root     SW<      0  0.0   0  0.2 [galcore_deamon/]
-1559     2 root     IW       0  0.0   0  0.1 [kworker/0:1-eve]
-1711  1071 root     R     3508  0.2   1  0.0 top
-1427     2 root     IW       0  0.0   3  0.0 [kworker/3:1-eve]
-1425     2 root     IW       0  0.0   2  0.0 [kworker/2:0-eve]
-1477     2 root     IW       0  0.0   1  0.0 [kworker/1:2-eve]
-1289     2 root     IW       0  0.0   2  0.0 [kworker/u8:4-kc]
+1471  1436 root     S    25.2g1516.3   2 21.3 /usr/libexec/QtWebEngineProcess --type=renderer --webengine-schemes=qrc:sV --no-sandbo
+1431  1070 root     S    2406m140.9   2  8.1 /usr/share/examples/webenginewidgets/simplebrowser/simplebrowser https://www.youtube.co
+1488  1431 root     S     585m 34.2   0  0.8 /usr/libexec/QtWebEngineProcess --type=utility --utility-sub-type=audio.mojom.AudioServ
+  184     2 root     SW<      0  0.0   3  0.3 [galcore_deamon/]
+1498  1070 root     R     3508  0.2   3  0.1 top
+   33     2 root     IW       0  0.0   0  0.1 [kworker/0:1-eve]
+   35     2 root     IW       0  0.0   2  0.1 [kworker/2:1-eve]
+1428     2 root     IW       0  0.0   0  0.1 [kworker/0:0-eve]
 
-=>  Approximately 76.2% of cpu is idle and about 21.9% of cpu is used by the simplebrowser application while playing the youtube video in 480P
+=>  Approximately 68.2% of cpu is idle and about 31% of cpu is used by the simplebrowser application while playing the youtube video in 480P
 ```
