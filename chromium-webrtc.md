@@ -81,7 +81,7 @@ js: Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort
 * Within this tab, one can view the various audio and video devices available on the board.
 * The selected camera from the **video source** dropdown will provide a preview on the screen.
 
-<img width="623" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/07ddcadf-b60a-4609-b6df-3e9fedb4daab">
+<img width="623" alt="image" src="webrtc/query_out.png">
 
 ## Camera Testing
 
@@ -89,25 +89,25 @@ js: Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort
 * Click on the highlighted link, similar to the one shown in the image, to test the camera streaming in browser
 
 
-<img width="481" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/3d2e07dc-89c5-4312-97a0-b8f8b5b6b476">
+<img width="481" alt="image" src="webrtc/choose_camera.png">
 
 * Afterwards, a new tab resembling the one displayed below will open on the screen.
 * Within this tab, click the button **open camera** and give the access to camera 
 * Then a preview of the camera will be displayed on the screen
 
-<img width="373" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/63b3d16d-2ddc-467b-8c4b-5a8df4be7e8c">
+<img width="373" alt="image" src="webrtc/camera_out.png">
 
 ## Choosing different camera resolutions
 
 * A screen similar to the one shown below will appear on the display.
 * Click on the highlighted link, similar to the one shown in the image, to check the different camera resolutions 
 
-<img width="484" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/4cef922e-7090-4ed5-9b35-068e053047c6">
+<img width="484" alt="image" src="webrtc/choose_resolution.png">
 
 * Afterwards, a new tab resembling the one displayed below will open on the screen.
 * Within this tab, one can select for various camera resolutions—such as QVGA, VGA, HD, and Full HD and preview them accordingly.
   
-<img width="663" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/bb34bd24-dddb-4c00-a10d-99be8954a899">
+<img width="663" alt="image" src="webrtc/resolution_out.png">
 
 ## Taking the snapshot from the browser
 
