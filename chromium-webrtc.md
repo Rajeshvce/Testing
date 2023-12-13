@@ -89,7 +89,7 @@ js: Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort
 * Click on the highlighted link, similar to the one shown in the image, to test the camera streaming in browser
 
 
-<img width="481" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/3d2e07dc-89c5-4312-97a0-b8f8b5b6b476">
+<img width="481" alt="image" src="webrtc/choose_query.png">
 
 * Afterwards, a new tab resembling the one displayed below will open on the screen.
 * Within this tab, click the button **open camera** and give the access to camera 
