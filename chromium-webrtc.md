@@ -35,6 +35,7 @@ index 0888006..35c1149 100644
 ## Start the simple browser application
 ```
 root@spencer-gen2:~#
+root@spencer-gen2:~# systemctl stop spencer-splash.service
 root@spencer-gen2:~# echo nameserver 8.8.8.8 >> /etc/resolv.conf
 root@spencer-gen2:~# export QTWEBENGINE_DISABLE_SANDBOX=1
 root@spencer-gen2:~# export QT_QPA_EGLFS_FORCE888=24
@@ -75,13 +76,13 @@ js: Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort
 * Click on the highlighted link, similar to the one shown in the image, to query the video and audio devices from the 
   browser
 
-<img width="366" alt="image" src="webrtc/choose_query.png">
+<img width="366" alt="image" src="resources/choose_query.png">
 
 * Afterwards, a new tab resembling the one displayed below will open on the screen.
 * Within this tab, one can view the various audio and video devices available on the board.
 * The selected camera from the **video source** dropdown will provide a preview on the screen.
 
-<img width="623" alt="image" src="webrtc/query_out.png">
+<img width="623" alt="image" src="resources/query_out.png">
 
 ## Camera Testing
 
@@ -89,52 +90,52 @@ js: Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort
 * Click on the highlighted link, similar to the one shown in the image, to test the camera streaming in browser
 
 
-<img width="481" alt="image" src="webrtc/choose_camera.png">
+<img width="481" alt="image" src="resources/choose_camera.png">
 
 * Afterwards, a new tab resembling the one displayed below will open on the screen.
 * Within this tab, click the button **open camera** and give the access to camera 
 * Then a preview of the camera will be displayed on the screen
 
-<img width="373" alt="image" src="webrtc/camera_out.png">
+<img width="373" alt="image" src="resources/camera_out.png">
 
 ## Choosing different camera resolutions
 
 * A screen similar to the one shown below will appear on the display.
 * Click on the highlighted link, similar to the one shown in the image, to check the different camera resolutions 
 
-<img width="484" alt="image" src="webrtc/choose_resolution.png">
+<img width="484" alt="image" src="resources/choose_resolution.png">
 
 * Afterwards, a new tab resembling the one displayed below will open on the screen.
 * Within this tab, one can select for various camera resolutions—such as QVGA, VGA, HD, and Full HD and preview them accordingly.
   
-<img width="663" alt="image" src="webrtc/resolution_out.png">
+<img width="663" alt="image" src="resources/resolution_out.png">
 
 ## Taking the snapshot from the browser
 
 * A screen similar to the one shown below will appear on the display.
 * Click on the highlighted link, similar to the one shown in the image, to take a snapshot from the camera
 
-<img width="484" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/aeb39d64-82c6-4a9c-ab9d-5153a6d5299c">
+<img width="484" alt="image" src="resources/choose_snapshot.png">
 
 
 * Afterwards,a new tab resembling the one displayed below will open on the screen.
 * Within this tab, One can take a snapshot by clicking the **Take snapshot** button there
 
 
-<img width="271" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/3667614c-ba0c-462b-9399-e9f3dbaaeb3f">
+<img width="271" alt="image" src="resources/snapshot_out.png">
 
 ## Testing Audio output
 
 * A screen similar to the one shown below will appear on the display.
 * Click on the highlighted link, similar to the one shown in the image, to test the audio output from the browser
 
-<img width="241" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/24b884d0-f791-4f8c-af66-03f5cdc82ba0">
+<img width="241" alt="image" src="resources/choose_audio.png">
 
 
 * Afterwards, new tab resembling the one displayed below will open on the screen.
 * Within this tab, users can play the second video and listen to the audio through the speakers.
 
-<img width="663" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/be8b7e01-bba2-4f2c-bdd8-a6ad5562a18c">
+<img width="663" alt="image" src="resources/audio_out.png">
 
 
 ## Testing basic peer to peer connection
@@ -143,26 +144,26 @@ js: Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort
 * A screen similar to the one shown below will appear on the display.
 * Click on the highlighted link, similar to the one shown in the image, to test the peer to peer connection
 
-<img width="255" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/43dd5cc7-de6b-402b-8e85-8b216eee9d80">
+<img width="255" alt="image" src="resources/choose_peer.png">
 
 * Afterwards, new tab resembling the one displayed below will open on the screen.
 * Open two separate tabs using the same highlighted link and proceed to click **Start** in both tabs.
 * This action will display side-by-side camera previews from both tabs.
 
-<img width="711" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/d49f3ba5-3a18-4759-881b-aa45c4dbf589">
+<img width="711" alt="image" src="resources/peer_out.png">
 
 ## Testing data transfer 
 
 * A screen similat to the one shown below will appear on the display.
 * Click on the highlighted link, similat to the one shown in the image, to test the data transfer
 
-<img width="464" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/dfca40b1-20e8-4ad2-8a24-619e8ba60f66">
+<img width="464" alt="image" src="resources/choose_transfer.png">
 
 * Afterwards, new tab resembling the one displayed below will open on the screen.
 * Within this tab, click the button **Generate and send data** and then the user will be
   notified after successfull data transfer completion similar to the below image
 
-<img width="756" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/d17f7bf2-53f4-42d0-93f6-9d25e458177e">
+<img width="756" alt="image" src="resources/transfer_out.png">
 
 
 # GPU Verification Test 
