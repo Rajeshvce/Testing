@@ -170,14 +170,14 @@ js: Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort
 * A screen similar to the one shown below will appear on the display.
 * Click on the highlighted link, similar to the one shown in the image, to test the codecs
 
-<img width="502" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/c94a5491-def1-41bf-9c99-cd35e655f6ac">
+<img width="502" alt="image" src="resources/choose_codec.png">
 
 * Afterwards, new tab resembling the one displayed below will open on the screen.
 * Within this tab, click on the **Start** button.
 * Choose your preferred codec from the **Codec preferences** dropdown menu. Once selected, click on the **Call**
   button to display a preview of the call using the chosen codec in the another screen.
 
-<img width="720" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/c199f08a-3cc8-43f4-9f46-7711e5b3b6f9">
+<img width="720" alt="image" src="resources/codec_out.png">
 
 
 # GPU Verification Test 
