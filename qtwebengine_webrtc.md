@@ -245,6 +245,17 @@ Load average: 1.05 1.37 0.76 2/218 1505
 * GPU usage while testing VP8 codec in simple browser
 
 ```
+root@spencer-gen2:~#
+root@spencer-gen2:~# gmem_info
+ Pid          Total      Reserved    Contiguous       Virtual      Nonpaged    Name
+ 1545    29,511,413    27,053,813     2,457,600             0             0    /usr/share/examples/webenginewidgets/simplebrowser/simplebrowser
+ ------------------------------------------------------------------------------
+    1    29,511,413    27,053,813     2,457,600             0             0    Summary
+    -             -   241,381,643             -             -             -    Available
+GPU Idle time:  4378.844727 ms
+root@spencer-gen2:~#
+root@spencer-gen2:~#
+root@spencer-gen@:~# top
 Mem: 822452K used, 920012K free, 17260K shrd, 11628K buff, 264068K cached
 CPU: 52.6% usr  7.7% sys  0.0% nic 37.6% idle  0.0% io  1.4% irq  0.4% sirq
 Load average: 2.60 1.04 0.43 6/215 1289
@@ -265,6 +276,17 @@ Load average: 2.60 1.04 0.43 6/215 1289
 * GPU usage while testing VP9 codec in simple browser
 
 ```
+root@spencer-gen2:~#
+root@spencer-gen2:~# gmem_info
+ Pid          Total      Reserved    Contiguous       Virtual      Nonpaged    Name
+ 1545    29,223,206    26,765,606     2,457,600             0             0    /usr/share/examples/webenginewidgets/simplebrowser/simplebrowser
+ ------------------------------------------------------------------------------
+    1    29,223,206    26,765,606     2,457,600             0             0    Summary
+    -             -   241,669,850             -             -             -    Available
+GPU Idle time:  557.048340 ms
+root@spencer-gen2:~#
+root@spencer-gen2:~#
+root@spencer-gen2:~# top
 Mem: 867648K used, 874816K free, 17136K shrd, 11628K buff, 264184K cached
 CPU: 62.2% usr  7.8% sys  0.0% nic 27.9% idle  0.0% io  1.4% irq  0.4% sirq
 Load average: 3.77 1.81 0.76 3/215 1296
