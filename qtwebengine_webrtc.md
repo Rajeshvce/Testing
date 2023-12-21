@@ -165,10 +165,19 @@ js: Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort
 
 <img width="756" alt="image" src="resources/transfer_out.png">
 
-<img width="768" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/6f58dfe4-deae-41fe-9199-a4209329ac7a">
-<img width="489" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/903c7802-fd03-4e24-b1bf-57e67be8b9c7">
+## Testing the codecs
 
+* A screen similar to the one shown below will appear on the display.
+* Click on the highlighted link, similar to the one shown in the image, to test the codecs
 
+<img width="502" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/c94a5491-def1-41bf-9c99-cd35e655f6ac">
+
+* Afterwards, new tab resembling the one displayed below will open on the screen.
+* Within this tab, click on the **Start** button.
+* Choose your preferred codec from the **Codec preferences** dropdown menu. Once selected, click on the **Call**
+  button to display a preview of the call using the chosen codec in the another screen.
+
+<img width="720" alt="image" src="https://github.com/Rajeshvce/Testing/assets/94607772/c199f08a-3cc8-43f4-9f46-7711e5b3b6f9">
 
 
 # GPU Verification Test 
