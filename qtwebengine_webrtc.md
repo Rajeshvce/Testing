@@ -246,31 +246,31 @@ Load average: 1.05 1.37 0.76 2/218 1505
 
 ```
 root@spencer-gen2:~#
+root@spencer-gen2:~#
 root@spencer-gen2:~# gmem_info
  Pid          Total      Reserved    Contiguous       Virtual      Nonpaged    Name
- 1545    29,511,413    27,053,813     2,457,600             0             0    /usr/share/examples/webenginewidgets/simplebrowser/simplebrowser
+ 1496    42,544,542    40,086,942     2,457,600             0             0    /usr/share/examples/webenginewidgets/simplebrowser/simplebrowser
  ------------------------------------------------------------------------------
-    1    29,511,413    27,053,813     2,457,600             0             0    Summary
-    -             -   241,381,643             -             -             -    Available
-GPU Idle time:  4378.844727 ms
-root@spencer-gen2:~#
+    1    42,544,542    40,086,942     2,457,600             0             0    Summary
+    -             -   228,348,514             -             -             -    Available
+GPU Idle time:  612.301270 ms
 root@spencer-gen2:~#
 root@spencer-gen@:~# top
-Mem: 822452K used, 920012K free, 17260K shrd, 11628K buff, 264068K cached
-CPU: 52.6% usr  7.7% sys  0.0% nic 37.6% idle  0.0% io  1.4% irq  0.4% sirq
-Load average: 2.60 1.04 0.43 6/215 1289
+Mem: 852032K used, 890432K free, 17536K shrd, 11616K buff, 266880K cached
+CPU: 47.2% usr  7.7% sys  0.0% nic 43.1% idle  0.0% io  1.3% irq  0.5% sirq
+Load average: 2.46 2.71 2.02 5/221 1598
   PID  PPID USER     STAT   VSZ %VSZ CPU %CPU COMMAND
- 1240  1222 root     S    25.6g1541.0   1 41.8 /usr/libexec/QtWebEngineProcess --type=renderer --webengine-schemes=qrc:sV --no-sandbo
- 1215  1068 root     S    2180m127.7   2 12.7 /usr/share/examples/webenginewidgets/simplebrowser/simplebrowser https://webrtc.github.
- 1263  1215 root     S     656m 38.4   3  4.1 /usr/libexec/QtWebEngineProcess --type=utility --utility-sub-type=video_capture.mojom.V
- 1258  1215 root     S     657m 38.5   0  2.2 /usr/libexec/QtWebEngineProcess --type=utility --utility-sub-type=audio.mojom.AudioServ
-  184     2 root     SW<      0  0.0   2  0.2 [galcore_deamon/]
- 1288  1068 root     R     3508  0.2   2  0.0 top
-   13     2 root     IW       0  0.0   1  0.0 [rcu_preempt]
- 1221  1215 root     S     293m 17.2   0  0.0 /usr/libexec/QtWebEngineProcess --type=zygote --no-zygote-sandbox --no-sandbox --applic
- 1222  1215 root     S     293m 17.2   3  0.0 /usr/libexec/QtWebEngineProcess --type=zygote --no-sandbox --application-name=simplebro
+ 1544  1501 root     S    25.6g1540.9   1 37.6 /usr/libexec/QtWebEngineProcess --type=renderer --webengine-schemes=qrc:sV --no-sandbo
+ 1496  1072 root     S    2117m124.0   2 12.1 /usr/share/examples/webenginewidgets/simplebrowser/simplebrowser https://webrtc.github.
+ 1562  1496 root     S     656m 38.4   2  3.5 /usr/libexec/QtWebEngineProcess --type=utility --utility-sub-type=video_capture.mojom.V
+ 1557  1496 root     S     657m 38.5   2  2.1 /usr/libexec/QtWebEngineProcess --type=utility --utility-sub-type=audio.mojom.AudioServ
+  185     2 root     SW<      0  0.0   3  0.3 [galcore_deamon/]
+ 1589  1072 root     R     3508  0.2   1  0.0 top
+   13     2 root     IW       0  0.0   2  0.0 [rcu_preempt]
+ 1518  1501 root     SN   25.0g1503.9   2  0.0 /usr/libexec/QtWebEngineProcess --type=renderer --webengine-schemes=qrc:sV --no-sandbo
+ 1501  1496 root     S     293m 17.2   3  0.0 /usr/libexec/QtWebEngineProcess --type=zygote --no-sandbox --application-name=simplebro
 
-=> Approximately 37.6% of cpu is idle and about 62% of cpu is used by the simple browser application while testing the VP8 codec
+=> Approximately 43.1% of cpu is idle and about 56% of cpu is used by the simple browser application while testing the VP8 codec
 ```
 
 * GPU usage while testing VP9 codec in simple browser
