@@ -182,7 +182,7 @@ js: Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort
 
 # GPU Verification Test 
 
-* GPU usage for Camera Streaming in https://webrtc.github.io/samples/src/content/getusermedia/resolution/ with **FULL HD**
+* CPU usage for Camera Streaming in https://webrtc.github.io/samples/src/content/getusermedia/resolution/ with **FULL HD**
 
 ```
 root@spencer-gen2:~#
@@ -212,7 +212,7 @@ Load average: 0.51 0.50 0.37 2/212 1410
 => Approximately 67.8% of cpu is idle and about 31% of cpu is used by the simplebrowser application while streaming the camera in FULL HD resolution .
 ```
 
-* GPU usage for youtube video (https://www.youtube.com/watch?v=y9n6HkftavM&ab_channel=8KParadise) streamed in 480P
+* CPU usage for youtube video (https://www.youtube.com/watch?v=y9n6HkftavM&ab_channel=8KParadise) streamed in 480P
 
 ```
 root@spencer-gen2:~# 
@@ -242,7 +242,7 @@ Load average: 1.05 1.37 0.76 2/218 1505
 =>  Approximately 68.2% of cpu is idle and about 31% of cpu is used by the simplebrowser application while playing the youtube video in 480P
 ```
 
-* GPU usage while testing VP8 codec in simple browser
+* CPU usage while testing VP8 codec in simple browser
 
 ```
 root@spencer-gen2:~#
@@ -273,7 +273,7 @@ Load average: 2.46 2.71 2.02 5/221 1598
 => Approximately 43.1% of cpu is idle and about 56% of cpu is used by the simple browser application while testing the VP8 codec
 ```
 
-* GPU usage while testing VP9 codec in simple browser
+* CPU usage while testing VP9 codec in simple browser
 
 ```
 root@spencer-gen2:~#
@@ -304,7 +304,7 @@ Load average: 4.51 3.48 2.45 4/217 1617
 => Approximately 28.5% of cpu is idle and about 71% of cpu is used by the simple browser application while testing the VP9 codec
 ```
 
-* GPU usage while testing AV1X codec in simple browser
+* CPU usage while testing AV1X codec in simple browser
 ```
 root@spencer-gen2:~#
 root@spencer-gen2:~#
@@ -377,7 +377,7 @@ Init Parameters:
 root@spencer-gen2:~#
 ```
 
-* GPU usage for Camera Streaming in https://webrtc.github.io/samples/src/content/getusermedia/resolution/ with **FULL HD** while GPU is disabled
+* CPU usage for Camera Streaming in https://webrtc.github.io/samples/src/content/getusermedia/resolution/ with **FULL HD** while GPU is disabled
 ```
 root@spencer-gen2:~#
 root@spencer-gen2:~# top
@@ -397,7 +397,7 @@ Load average: 2.29 3.13 2.81 2/215 1823
 => Approximately 34% of CPU is used when the GPU is disabled
 ```
 
-* GPU usage for youtube video (https://www.youtube.com/watch?v=y9n6HkftavM&ab_channel=8KParadise) streamed in 480P while the GPU is disabled
+* CPU usage for youtube video (https://www.youtube.com/watch?v=y9n6HkftavM&ab_channel=8KParadise) streamed in 480P while the GPU is disabled
 ```
 root@spencer-gen2:~#
 root@spencer-gen2:~# top
@@ -423,7 +423,7 @@ Load average: 2.14 1.78 2.12 4/219 2071
 
 => Approximately 37% percent of CPU is used when the GPU is disabled
 ```
-* GPU usage while testing VP8 codec in simple browser while the GPU is disabled
+* CPU usage while testing VP8 codec in simple browser while the GPU is disabled
 ```
 root@spencer-gen2:~#
 root@spencer-gen2:~# top
