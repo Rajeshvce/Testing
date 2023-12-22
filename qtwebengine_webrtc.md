@@ -423,4 +423,71 @@ Load average: 2.14 1.78 2.12 4/219 2071
 
 => Approximately 37% percent of CPU is used when the GPU is disabled
 ```
+* GPU usage while testing VP8 codec in simple browser while the GPU is disabled
+```
+root@spencer-gen2:~#
+root@spencer-gen2:~# top
+Mem: 827732K used, 914732K free, 22308K shrd, 11748K buff, 271652K cached
+CPU: 54.1% usr  6.7% sys  0.0% nic 37.2% idle  0.0% io  1.3% irq  0.4% sirq
+Load average: 2.55 3.01 2.58 7/222 1735
+  PID  PPID USER     STAT   VSZ %VSZ CPU %CPU COMMAND
+ 1692  1661 root     S    25.6g1541.2   2 41.5 /usr/libexec/QtWebEngineProcess --type=renderer --webengine-schemes=qrc:sV --no-sandbo
+ 1656  1072 root     S    2053m120.2   1 14.4 /usr/share/examples/webenginewidgets/simplebrowser/simplebrowser --disable-gpu https://
+ 1711  1656 root     S     657m 38.5   0  3.6 /usr/libexec/QtWebEngineProcess --type=utility --utility-sub-type=video_capture.mojom.V
+ 1705  1656 root     S     729m 42.7   3  2.1 /usr/libexec/QtWebEngineProcess --type=utility --utility-sub-type=audio.mojom.AudioServ
+  185     2 root     SW<      0  0.0   2  0.1 [galcore_deamon/]
+ 1704  1072 root     R     3508  0.2   2  0.0 top
+ 1382     2 root     IW       0  0.0   3  0.0 [kworker/3:2-eve]
+  117     2 root     SW       0  0.0   1  0.0 [30902000.jr-eng]
+ 1677  1661 root     SN   25.0g1503.9   0  0.0 /usr/libexec/QtWebEngineProcess --type=renderer --webengine-schemes=qrc:sV --no-sandbo
+ 1660  1656 root     S     293m 17.2   3  0.0 /usr/libexec/QtWebEngineProcess --type=zygote --no-zygote-sandbox --no-sandbox --applic
+ 1661  1656 root     S     293m 17.2   0  0.0 /usr/libexec/QtWebEngineProcess --type=zygote --no-sandbox --application-name=simplebro
+
+=> Approximately 63% of CPU is used when GPU is disabled
+```
+
+* CPU usage while testing VP9 codec in simple browser while the GPU is disabled
+
+```
+root@spencer-gen2:~# top
+Mem: 877724K used, 864740K free, 21260K shrd, 11764K buff, 270604K cached
+CPU: 65.5% usr  7.8% sys  0.0% nic 24.6% idle  0.0% io  1.4% irq  0.5% sirq
+Load average: 3.91 3.29 2.72 4/224 1750
+  PID  PPID USER     STAT   VSZ %VSZ CPU %CPU COMMAND
+ 1692  1661 root     S    25.6g1541.6   1 52.5 /usr/libexec/QtWebEngineProcess --type=renderer --webengine-schemes=qrc:sV --no-sandbo
+ 1656  1072 root     S    2052m120.2   1 15.4 /usr/share/examples/webenginewidgets/simplebrowser/simplebrowser --disable-gpu https://
+ 1711  1656 root     S     657m 38.5   0  3.9 /usr/libexec/QtWebEngineProcess --type=utility --utility-sub-type=video_capture.mojom.V
+ 1705  1656 root     S     729m 42.7   2  2.2 /usr/libexec/QtWebEngineProcess --type=utility --utility-sub-type=audio.mojom.AudioServ
+  185     2 root     SW<      0  0.0   3  0.2 [galcore_deamon/]
+ 1747  1072 root     R     3508  0.2   3  0.0 top
+   41     2 root     SWN      0  0.0   2  0.0 [khugepaged]
+ 1677  1661 root     SN   25.0g1503.9   3  0.0 /usr/libexec/QtWebEngineProcess --type=renderer --webengine-schemes=qrc:sV --no-sandbo
+ 1660  1656 root     S     293m 17.2   3  0.0 /usr/libexec/QtWebEngineProcess --type=zygote --no-zygote-sandbox --no-sandbox --applic
+ 1661  1656 root     S     293m 17.2   0  0.0 /usr/libexec/QtWebEngineProcess --type=zygote --no-sandbox --application-name=simplebro
+
+=> Approximately 76% percent of CPU is used when GPU is disabled
+```
+
+* CPU usage while testing AV1X codec in simple browser while the GPU is disabled
+
+```
+root@spencer-gen2:~# top
+Mem: 927936K used, 814528K free, 20960K shrd, 11780K buff, 270304K cached
+CPU: 50.0% usr  7.2% sys  0.0% nic 41.0% idle  0.0% io  1.3% irq  0.3% sirq
+Load average: 3.56 3.48 2.88 1/222 1768
+  PID  PPID USER     STAT   VSZ %VSZ CPU %CPU COMMAND
+ 1692  1661 root     S    25.8g1548.0   0 36.1 /usr/libexec/QtWebEngineProcess --type=renderer --webengine-schemes=qrc:sV --no-sandbo
+ 1656  1072 root     S    2051m120.2   2 12.4 /usr/share/examples/webenginewidgets/simplebrowser/simplebrowser --disable-gpu https://
+ 1711  1656 root     S     657m 38.5   3  3.4 /usr/libexec/QtWebEngineProcess --type=utility --utility-sub-type=video_capture.mojom.V
+ 1705  1656 root     S     729m 42.7   1  2.4 /usr/libexec/QtWebEngineProcess --type=utility --utility-sub-type=audio.mojom.AudioServ
+ 1747  1072 root     R     3508  0.2   3  0.3 top
+ 1637     2 root     IW       0  0.0   1  0.3 [kworker/1:0-eve]
+ 1677  1661 root     SN   25.0g1503.9   3  0.0 /usr/libexec/QtWebEngineProcess --type=renderer --webengine-schemes=qrc:sV --no-sandbo
+ 1660  1656 root     S     293m 17.2   3  0.0 /usr/libexec/QtWebEngineProcess --type=zygote --no-zygote-sandbox --no-sandbox --applic	
+ 1661  1656 root     S     293m 17.2   0  0.0 /usr/libexec/QtWebEngineProcess --type=zygote --no-sandbox --application-name=simplebro
+
+=> Approximately 59% of CPU is used when GPU is disabled
+```
+  
+
 
