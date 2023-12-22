@@ -304,6 +304,41 @@ Load average: 4.51 3.48 2.45 4/217 1617
 => Approximately 28.5% of cpu is idle and about 71% of cpu is used by the simple browser application while testing the VP9 codec
 ```
 
+* GPU usage while testing AV1X codec in simple browser
+```
+root@spencer-gen2:~#
+root@spencer-gen2:~#
+root@spencer-gen2:~# gmem_info
+ Pid          Total      Reserved    Contiguous       Virtual      Nonpaged    Name
+ 1496    41,399,982    38,942,382     2,457,600             0             0    /usr/share/examples/webenginewidgets/simplebrowser/simplebrowser
+ ------------------------------------------------------------------------------
+    1    41,399,982    38,942,382     2,457,600             0             0    Summary
+    -             -   229,493,074             -             -             -    Available
+GPU Idle time:  444.254730 ms
+root@spencer-gen2:~#
+root@spencer-gen2:~#
+root@spencer-gen2:~# top
+Mem: 912644K used, 829820K free, 17764K shrd, 11672K buff, 267108K cached
+CPU: 44.1% usr  6.3% sys  0.0% nic 47.8% idle  0.0% io  1.3% irq  0.3% sirq
+Load average: 3.14 3.48 2.64 2/220 1642
+  PID  PPID USER     STAT   VSZ %VSZ CPU %CPU COMMAND
+ 1544  1501 root     S    25.7g1547.8   2 35.4 /usr/libexec/QtWebEngineProcess --type=renderer --webengine-schemes=qrc:sV --no-sandbo
+ 1496  1072 root     S    2117m124.0   0  9.4 /usr/share/examples/webenginewidgets/simplebrowser/simplebrowser https://webrtc.github.
+ 1562  1496 root     S     657m 38.5   2  3.2 /usr/libexec/QtWebEngineProcess --type=utility --utility-sub-type=video_capture.mojom.V
+ 1557  1496 root     S     657m 38.5   3  2.1 /usr/libexec/QtWebEngineProcess --type=utility --utility-sub-type=audio.mojom.AudioServ
+  185     2 root     SW<      0  0.0   0  0.2 [galcore_deamon/]
+ 1633  1072 root     R     3508  0.2   2  0.1 top
+   13     2 root     IW       0  0.0   1  0.0 [rcu_preempt]
+  693     2 root     IW       0  0.0   2  0.0 [kworker/2:5-eve]
+ 1595     2 root     IW       0  0.0   0  0.0 [kworker/0:0-eve]
+ 1637     2 root     IW       0  0.0   1  0.0 [kworker/1:0-eve]
+ 1518  1501 root     SN   25.0g1503.9   0  0.0 /usr/libexec/QtWebEngineProcess --type=renderer --webengine-schemes=qrc:sV --no-sandbo
+ 1501  1496 root     S     293m 17.2   3  0.0 /usr/libexec/QtWebEngineProcess --type=zygote --no-sandbox --application-name=simplebro
+ 1500  1496 root     S     293m 17.2   1  0.0 /usr/libexec/QtWebEngineProcess --type=zygote --no-zygote-sandbox --no-sandbox --applic
+
+=> Approximately 47.8% of cpu is idle and about 52% of cpu is used by the simple browser application while testing the AV1X codec
+```
+
 # CPU usage when the GPU is disabled
 
 * Launch the simple browser application with the following flag **--disable-gpu** like below to disable the GPU 
