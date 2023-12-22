@@ -376,7 +376,7 @@ Init Parameters:
   *  use-gl disabled
 root@spencer-gen2:~#
 ```
-* Following are the changes that one can notice while the GPU is disabled using the** --disable-gpu** flag from above <br>
+* Following are the changes that one can notice while the GPU is disabled using the **--disable-gpu** flag from above <br>
    => GL Type **disabled** <br>
    => use-gl  **disabled**
 
