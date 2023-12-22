@@ -376,6 +376,9 @@ Init Parameters:
   *  use-gl disabled
 root@spencer-gen2:~#
 ```
+* Following are the changes that one can notice while the GPU is disabled using the** --disable-gpu** flag from above <br>
+   => GL Type **disabled** <br>
+   => use-gl  **disabled**
 
 * CPU usage for Camera Streaming in https://webrtc.github.io/samples/src/content/getusermedia/resolution/ with **FULL HD** while GPU is disabled
 ```
