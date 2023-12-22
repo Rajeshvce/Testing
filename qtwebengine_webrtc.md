@@ -396,3 +396,31 @@ Load average: 2.29 3.13 2.81 2/215 1823
 
 => Approximately 34% of CPU is used when the GPU is disabled
 ```
+
+* GPU usage for youtube video (https://www.youtube.com/watch?v=y9n6HkftavM&ab_channel=8KParadise) streamed in 480P while the GPU is disabled
+```
+root@spencer-gen2:~#
+root@spencer-gen2:~# top
+Mem: 1035824K used, 706640K free, 53216K shrd, 13804K buff, 353612K cached
+CPU: 32.9% usr  3.0% sys  0.0% nic 63.0% idle  0.0% io  0.8% irq  0.2% sirq
+Load average: 2.14 1.78 2.12 4/219 2071
+  PID  PPID USER     STAT   VSZ %VSZ CPU %CPU COMMAND
+ 2043  2013 root     S    25.2g1516.9   3 21.3 /usr/libexec/QtWebEngineProcess --type=renderer --webengine-schemes=qrc:sV --no-sandbo
+ 2007  1072 root     S    2267m132.8   2 13.6 /usr/share/examples/webenginewidgets/simplebrowser/simplebrowser --disable-gpu https://
+ 2059  2007 root     S     657m 38.5   3  0.8 /usr/libexec/QtWebEngineProcess --type=utility --utility-sub-type=audio.mojom.AudioServ
+ 2006     2 root     IW       0  0.0   0  0.2 [kworker/0:1-eve]
+  185     2 root     SW<      0  0.0   0  0.1 [galcore_deamon/]
+ 2071  1072 root     R     3508  0.2   1  0.0 top
+  693     2 root     IW       0  0.0   2  0.0 [kworker/2:5-eve]
+ 1889     2 root     IW<      0  0.0   2  0.0 [kworker/u9:3-MO]
+ 1803     2 root     IW<      0  0.0   2  0.0 [kworker/u9:2-MO]
+ 1994     2 root     IW       0  0.0   3  0.0 [kworker/3:1-eve]
+ 1998     2 root     IW<      0  0.0   2  0.0 [kworker/u9:1-MO]
+ 1999     2 root     IW       0  0.0   1  0.0 [kworker/1:1-eve]
+ 2029  2013 root     S    29.0g1743.7   2  0.0 /usr/libexec/QtWebEngineProcess --type=renderer --webengine-schemes=qrc:sV --no-sandbo
+ 2012  2007 root     S     293m 17.2   2  0.0 /usr/libexec/QtWebEngineProcess --type=zygote --no-zygote-sandbox --no-sandbox --applic
+ 2013  2007 root     S     293m 17.2   2  0.0 /usr/libexec/QtWebEngineProcess --type=zygote --no-sandbox --application-name=simplebro
+
+=> Approximately 37% percent of CPU is used when the GPU is disabled
+```
+
