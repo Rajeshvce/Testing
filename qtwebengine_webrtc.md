@@ -376,3 +376,23 @@ Init Parameters:
   *  use-gl disabled
 root@spencer-gen2:~#
 ```
+
+* GPU usage for Camera Streaming in https://webrtc.github.io/samples/src/content/getusermedia/resolution/ with **FULL HD** while GPU is disabled
+```
+root@spencer-gen2:~#
+root@spencer-gen2:~# top
+Mem: 806824K used, 935640K free, 43088K shrd, 10872K buff, 283860K cached
+CPU: 32.3% usr  1.5% sys  0.0% nic 65.7% idle  0.0% io  0.4% irq  0.0% sirq
+Load average: 2.29 3.13 2.81 2/215 1823
+  PID  PPID USER     STAT   VSZ %VSZ CPU %CPU COMMAND
+ 1805  1656 root     S     674m 39.5   0 19.8 /usr/libexec/QtWebEngineProcess --type=utility --utility-sub-type=video_capture.mojom.V
+ 1656  1072 root     S    2063m120.9   0  8.0 /usr/share/examples/webenginewidgets/simplebrowser/simplebrowser --disable-gpu https://
+ 1791  1661 root     S    25.1g1509.8   3  5.5 /usr/libexec/QtWebEngineProcess --type=renderer --webengine-schemes=qrc:sV --no-sandbo
+  185     2 root     SW<      0  0.0   3  0.1 [galcore_deamon/]
+ 1677  1661 root     SN   25.0g1503.9   0  0.0 /usr/libexec/QtWebEngineProcess --type=renderer --webengine-schemes=qrc:sV --no-sandbo
+ 1705  1656 root     S     729m 42.7   1  0.0 /usr/libexec/QtWebEngineProcess --type=utility --utility-sub-type=audio.mojom.AudioServ
+ 1660  1656 root     S     293m 17.2   3  0.0 /usr/libexec/QtWebEngineProcess --type=zygote --no-zygote-sandbox --no-sandbox --applic
+ 1661  1656 root     S     293m 17.2   1  0.0 /usr/libexec/QtWebEngineProcess --type=zygote --no-sandbox --application-name=simplebro
+
+=> Approximately 34% of CPU is used when the GPU is disabled
+```
