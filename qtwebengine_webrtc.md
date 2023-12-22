@@ -304,3 +304,41 @@ Load average: 3.77 1.81 0.76 3/215 1296
 
 => Approximately 27.9% of cpu is idle and about 82% of cpu is used by the simple browser application while testing the VP8 codec
 ```
+
+# CPU usage when the GPU is disabled
+
+* Launch the simple browser application with the following flag **--disable-gpu** like below to disable the GPU 
+
+```
+root@spencer-gen2:~#
+root@spencer-gen2:~#
+root@spencer-gen2:~# /usr/share/examples/webenginewidgets/simplebrowser/simplebrowser --disable-gpu https://webrtc.github.io/samples/ &
+[1] 1090
+root@spencer-gen2:~# QEglFSVivIntegration will set environment variable FB_MULTI_BUFFER=2 to enable double buffering and vsync.
+ If this is not desired, you can override this via: export QT_EGLFS_IMX6_NO_FB_MULTI_BUFFER=1
+Sandboxing disabled by user.
+qt.webenginecontext:
+
+GL Type: disabled
+Surface Type: OpenGLES
+Surface Profile: NoProfile
+Surface Version: 3.1
+QSG RHI Backend: OpenGL
+Using Supported QSG Backend: yes
+Using Software Dynamic GL: no
+Using Multithreaded OpenGL: yes
+
+Init Parameters:
+  *  application-name simplebrowser
+  *  browser-subprocess-path /usr/libexec/QtWebEngineProcess
+  *  disable-features ConsolidatedMovementXY,InstalledApp,BackgroundFetch,WebOTP,WebPayments,WebUSB,PictureInPicture
+  *  disable-gpu
+  *  disable-speech-api
+  *  enable-features NetworkServiceInProcess,TracingServiceInProcess
+  *  enable-threaded-compositing
+  *  enable-use-zoom-for-dsf false
+  *  in-process-gpu
+  *  no-sandbox
+  *  use-gl disabled
+root@spencer-gen2:~#
+```
